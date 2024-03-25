@@ -137,6 +137,37 @@ document.write("The amount per day " + amountperday + "<br>")
 document.write("The total eating snake " + eatTotal + "<br>")
 
 
+// Assigment no 06__
+
+var a = 10
+
+
+document.write("<h1>The value of a is: 10" + "<br>")
+
+document.write("------------------------------------" + "<br>" + "<br>")
+
+document.write("The value of ++a is " + ++a + "<br>")
+document.write("Now the value of a is " + a + "<br>" + "<br>")
+
+document.write("The value of a++ is " + a++ + "<br>")
+document.write("Now the value of a is " + a + "<br>" + "<br>")
+
+document.write("The value of --a is " + --a + "<br>")
+document.write("Now the value of a is " + a + "<br>" + "<br>")
+
+document.write("The value of a-- is " + a-- + "<br>")
+document.write("Now the value of a is " + a + "<br>")
+
+
+var a = 2 
+var b = 1
+var result = --a - --b + ++b + b--;
+
+document.write("a is " + a)
+document.write("b is " + b)
+document.write("Result is " + result)
+
+
 
 
 

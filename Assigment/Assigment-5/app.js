@@ -168,6 +168,119 @@ document.write("b is " + b)
 document.write("Result is " + result)
 
 
+// 26--03--2024
+
+var userInput = prompt("What is your name")
+document.write("Wellcome to our website " + userInput + "<br>")
+
+// no--5
+
+var usertableinput = prompt("plz Write a some number")
+document.write(`${usertableinput} x 1 = ${usertableinput * 1} <br>`)
+document.write(`${usertableinput} x 2 = ${usertableinput * 2} <br>`)
+document.write(`${usertableinput} x 3 = ${usertableinput * 3} <br>`)
+document.write(`${usertableinput} x 4 = ${usertableinput * 4} <br>`)
+document.write(`${usertableinput} x 5 = ${usertableinput * 5} <br>`)
+document.write(`${usertableinput} x 6 = ${usertableinput * 6} <br>`)
+document.write(`${usertableinput} x 7 = ${usertableinput * 7} <br>`)
+document.write(`${usertableinput} x 8 = ${usertableinput * 8} <br>`)
+document.write(`${usertableinput} x 9 = ${usertableinput * 9} <br>`)
+document.write(`${usertableinput} x 10 = ${usertableinput * 10} <br>`)
+
+// no--6
+
+var subject1 = prompt("plz write your 1 subject")
+var subject2 = prompt("plz write your 2 subject")
+var subject3 = prompt("plz write your 3 subject")
+
+var totalMarks = 100
+
+var obtain1 = prompt("plz enter obtain marks of subject 1")
+var obtain2 = prompt("plz enter obtain marks of subject 2")
+var obtain3 = prompt("plz enter obtain marks of subject 3")
+
+
+var percentage1 = obtain1 / totalMarks * 110
+var percentage2 = (obtain2 / totalMarks) * 110
+var percentage3 = (obtain3 / totalMarks) * 110
+
+// document.write("per-1 " + percentage1)
+// document.write("per-1 " + percentage1)
+// document.write("per-1 " + percentage1)
+document.write("Subject  Totalmarks  Obtainmarks  Percentage <br>")
+document.write(subject1 + " " + totalMarks + " " + obtain1 + " " + percentage1 + "%" + "<br>")
+document.write(subject2 + " " + totalMarks + " " + obtain2 + " " + percentage2 + "%" + "<br>")
+document.write(subject3 + " " + totalMarks + " " + obtain3 + " " + percentage3 + "%" + "<br>")
+
+
+
+// chapter no --09-- if and else 
+
+document.write("<h1>")
+var userCity = prompt("plz write your favorite city")
+if (userCity == "karachi") {
+    document.write("Wellcome to the city of light")
+
+} else {
+    document.write("You chose wrong city")
+}
+document.write("<br>")
+
+// --2--
+
+var userGender = prompt("Plz enter your gender")
+if (userGender == "male") {
+    document.write("Good Morning Sir")
+} else if (userGender == "female") {
+    document.write("Good Morning Maam")
+} else {
+    document.write("Your gender was not show")
+}
+document.write("<br>")
+
+// --3--
+
+var userColor = prompt("plz select your color  -- Red -- Yellow -- Green")
+if (userColor == "red") {
+    document.write("Must Stop")
+} else if (userColor == "yellow") {
+    document.write("Ready to Move")
+} else if (userColor == "green") {
+    document.write("Move Now")
+} else {
+    document.write("You chose wrong color")
+}
+document.write("<br>")
+
+
+// --4--
+
+var userfuel = prompt("how many fuel in car in liters")
+if (userfuel <= 0.25) {
+    document.write("plz fill out the tank in your car")
+}
+else {
+    document.write("Your tank is full")
+}
+document.write("<br>")
+
+// --5--
+
+var a = 4
+if (++a === 5) {
+    alert("given condition for variable a is true")
+}
+
+var b = 82
+if (b++ === 83) {
+    alert("given condition of variable b is true")
+}
+
+var c = 12
+if (c++ === 13)    {
+    alert("condition-1 is true")
+}
+
 
 
 

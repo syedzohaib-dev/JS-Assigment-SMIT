@@ -182,3 +182,7 @@ document.write("The total eating snake " + eatTotal + "<br>")
 
 
 
+
+
+
+

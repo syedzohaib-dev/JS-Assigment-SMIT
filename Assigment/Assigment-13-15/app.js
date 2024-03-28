@@ -22,3 +22,30 @@ document.write("9. " + qualification[8] + "<br>")
 
 // --8--
 
+// --8--
+
+var studentList = ['ali', 'junaid', 'salman']
+var studentScore = [222, 333, 444]
+var totalMarks = 500
+
+var per1 = studentScore[0] / totalMarks * 100
+var per2 = studentScore[1] / totalMarks * 100
+var per3 = studentScore[2] / totalMarks * 100
+
+
+document.write("<h1>Score of ali is: " + studentScore[0] + "Percentage: " + per1)
+document.write("<h1>Score of junaid is: " + studentScore[1] + "Percentage: " + per2)
+document.write("<h1>Score of salman is: " + studentScore[2] + "Percentage: " + per3)
+
+var userinput = prompt("plz enter your favorite color")
+
+userinput = userinput.color[""]
+
+var color = []
+
+// document.write("done")
+
+var studentScore = [320, 230, 480, 120]
+
+document.write(studentScore[0])
+

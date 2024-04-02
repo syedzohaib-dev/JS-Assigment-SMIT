@@ -125,4 +125,14 @@ document.write(`${device[3]}` + `<br>`)
 
 // --14--
 
+// --15--
 
+var phoneManufecture = ['apple', 'motrolla', 'samsung', 'q-mobile', 'htc', 'infinix']
+
+document.write("<select>")
+// document.write("<option value='" + phoneManufecture.length + "'" + phoneManufecture.length + "</option>")
+for (var i = 0; i < phoneManufecture.length; i++) {
+    document.write("<option value='" + phoneManufecture[i] + "'>" + phoneManufecture[i] + "</option>");
+}
+
+document.write("</select>")

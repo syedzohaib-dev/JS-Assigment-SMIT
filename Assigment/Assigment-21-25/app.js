@@ -189,3 +189,27 @@ document.write(foxy + "<br>")
 document.write("Word the in sentence is " + count + "<br>")
 
 
+
+// assigment --26-30--
+
+// --1--
+
+var number = parseFloat(prompt("plz enter a positive number"))
+
+document.write("Number " + number + '<br>')
+document.write("Round off value " + Math.round(number) + '<br>')
+document.write("Floor value " + Math.floor(number) + '<br>')
+document.write("Ceil value " + Math.ceil(number) + '<br>')
+
+// --2--
+
+var negetiveNumber = parseFloat(prompt("plz enter a positive number"))
+
+document.write("Number " + negetiveNumber + '<br>')
+document.write("Round off value " + Math.round(negetiveNumber) + '<br>')
+document.write("Floor value " + Math.floor(negetiveNumber) + '<br>')
+document.write("Ceil value " + Math.ceil(negetiveNumber) + '<br>')
+
+
+// --3--
+

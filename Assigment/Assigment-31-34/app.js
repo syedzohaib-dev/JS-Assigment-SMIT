@@ -21,4 +21,48 @@ document.write("Current Day: " + nameOfDay + "<br>")
 
 // --4--
 
+// -----------------------
 
+// --6--
+
+var aaj = new Date()
+
+var miliSecond = aaj.getTime()
+
+var eminut = aaj.getTime()
+
+var millisec = miliSecond / (1000 * 60 * 60 * 24);
+
+var elapminut = eminut / (1000 * 60)
+
+
+document.write("Current Date: " + aaj + "<br>")
+document.write("Elapse milisecond since january 1 1970: " + millisec + "<br>")
+document.write("Elapsed Minute since january 1 1970: " + elapminut + "<br>")
+
+
+// --7--
+
+var abhikatime = new Date()
+
+var currentHours = abhikatime.getHours()
+
+if (currentHours < 12) {
+    document.write("its AM" + "<br>")
+} else {
+    document.write("its PM" + "<br>")
+}
+
+// --8--
+
+var laterDate = new Date(2020, 11, 31)
+document.write("Later date: " + laterDate + "<br>")
+
+// --9--
+
+var oldDate = new Date(2015, 6, 18)
+
+var oldDate2 = oldDate.getDay()
+document.write(oldDate2)
+var ramzanCalculate = oldDate2 * (1000)
+document.write(ramzanCalculate)

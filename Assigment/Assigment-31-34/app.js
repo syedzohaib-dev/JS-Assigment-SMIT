@@ -369,7 +369,36 @@ function calcArea(radius) {
 clacCircumference(5)
 calcArea(5)
 
+// --38--44
 
+// --1--
+
+function value(a, b) {
+    return a + b
+}
+var result = value(3, 5)
+console.log(result)
+
+// --2--
+
+function isLeaper(Lyear) {
+    if (year % 4 === 0) {
+        if (year % 100 === 0 && year % 400 !== 0) {
+            return false
+        } else {
+            return true
+        }
+    } else {
+        false
+    }
+
+}
+let Lyear = 2023
+if (isLeaper(Lyear)) {
+    console.log("is leaper")
+} else {
+    console.log("not leaper")
+}
 
 
 

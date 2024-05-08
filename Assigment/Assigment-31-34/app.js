@@ -216,5 +216,160 @@ function calculator() {
 }
 calculator()
 
+document.write("<br>")
+
+// --5--
+
+function square(x) {
+    return x * x
+
+}
+var result = square(4)
+document.write(result)
+document.write("<br>")
+
+// --6--
+
+function factorial(n) {
+    if (n === 0 || n === 1) {
+        return 1
+    } else {
+        return n * factorial(n - 1)
+    }
+}
+document.write(factorial(5))
+document.write("<br>")
+
+// --7--
+
+function counting(start, end) {
+    for (var i = start; i <= end; i++) {
+        document.write(i + "<br>")
+    }
+}
+counting(12, 23)
+document.write("<br>")
+
+// --8--
+
+
+function calculateHypotenuse(base, perpendicular) {
+    function calculateSquare(side) {
+        return side * side
+    }
+    const baseSquare = calculateSquare(base)
+    const perpendicularSquare = calculateSquare(perpendicular)
+    const hypotenuseSquare = baseSquare + perpendicularSquare
+    const hypotenuse = Math.sqrt(hypotenuseSquare)
+    return hypotenuse
+}
+
+const base = 3
+const perpendicular = 4
+const hypotenuse = calculateHypotenuse(base, perpendicular)
+console.log("hypotenuse " + hypotenuse)
+
+// --9--
+
+function calculateRectangle(width, height) {
+    return width * height
+}
+var result = calculateRectangle(2, 3)
+console.log("The area of triangle " + result)
+
+function calculateRectangleVariable() {
+    var width = 2
+    var height = 3
+    var total = width * height
+    return total
+}
+var caltotal = calculateRectangleVariable()
+console.log("The area of triangle " + caltotal)
+
+// --10--
+
+function palindrome() {
+
+    var word = "mam"
+    var word1 = word.charAt(0)
+    console.log("1--" + word)
+    var word2 = word.charAt(word.length - 1)
+    console.log("2--" + word2)
+    var word12 = word.charAt(1)
+    console.log("12--" + word12)
+    var word22 = word.charAt(word.length - 2)
+    console.log(word22)
+    if (word1 === word2 && word12 === word22) {
+        console.log(word + " is palindrome")
+    } else {
+        console.log(word + " is not palindrome")
+    }
+}
+palindrome()
+
+// --11--/
+
+function convertUpperCase(str) {
+    let word = str.split(' ')
+    for (let i = 0; i < word.length; i++) {
+        word[i] = word[i].charAt(0).toUpperCase() + word[i].slice(1)
+    }
+    return word.join(' ')
+}
+let exampleStr = "the quick brown fox"
+let outut = convertUpperCase(exampleStr)
+console.log(outut)
+
+// --12--
+
+function findLongestWord(str) {
+    let word = str.split(' ')
+
+    let longestWord = ''
+    for (let i = 0; i < word.length; i++) {
+        if (word[i].length > longestWord.length) {
+            longestWord = word[i]
+        }
+    }
+    return longestWord
+}
+
+let exampleString = 'Web Development Tutorial';
+let longestWord = findLongestWord(exampleString)
+
+console.log(longestWord)
+
+// --13--
+
+function findWord(str, letter) {
+    var count = 0
+    for (var i = 0; i < str.length; i++) {
+        if (str.charAt(i) === letter) {
+            count++
+        }
+    }
+    return count
+}
+var result = findWord('JSResourceS.com', 'o')
+console.log("Number of occurrences " + result)
+
+// --14--
+
+function clacCircumference(radius) {
+    var circumferenceCircle = 2 * Math.PI * radius
+    console.log("The circumference is " + circumferenceCircle.toFixed(2))
+
+}
+
+function calcArea(radius) {
+    var areaCircle = Math.PI * radius * radius
+    console.log("The area is " + areaCircle.toFixed(2))
+}
+
+clacCircumference(5)
+calcArea(5)
+
+
+
 
 

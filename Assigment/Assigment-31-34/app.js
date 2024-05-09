@@ -401,4 +401,84 @@ if (isLeaper(Lyear)) {
 }
 
 
+// --3--
+
+// function calculateS(a, b, c) {
+//     return (a + b + c) / 2
+// }
+
+// function calculateArea(a, b, c) {
+//     const S = calculateS(a, b, c)
+//     return Math.sqrt(S * (S - a) * (S - b) * (S - c))
+// }
+
+// let a = 3
+// let b = 4
+// let c = 5
+// let area = calculateArea(a, b, c)
+// console.log("Area of triangle " + area)
+
+// --4--
+
+// function finalExam(english, urdu, math) {
+//     function english(sub1) {
+//         var average = (sub1 / 80) * 100
+//         return average.toFixed(2)
+//     }
+//     function urdu(sub2) {
+//         var average = (sub2 / 80) * 100
+//         return average.toFixed(2)
+//     }
+//     function math(sub3) {
+//         var average = (sub3 / 80) * 100
+//         return average.toFixed(2)
+//     }
+
+//     var result1 = english(44)
+//     console.log("The english percentage " + result1)
+
+//     var result2 = urdu(55)
+//     console.log("The urdu percentage " + result2)
+
+//     var result3 = math(66)
+//     console.log("The math percentage " + result3)
+//     return result1, result2, result3
+// }
+// finalExam(44, 55, 66)
+
+// --5--
+
+// function indexOff(string, word) {
+
+//     for (var i = 0; i < string.length; i++) {
+
+//         if (string[i] === word) {
+//             return i
+//         }
+//     }
+//     return - 1
+// }
+
+// var string = "A black cat"
+// let word = "b"
+// console.log(indexOff(string, word))
+
+// --6--
+
+function deleteVovel(sentence, vovel) {
+    var conArr = sentence.split(' ')
+    for (var i = 0; i < conArr.length; i++) {
+        if (conArr[i].includes(vovel)) {
+            console.log(conArr.delete([i]))
+        }
+    }
+    return conArr
+}
+var sentence = "my name is developer"
+var vovel = ['a', 'e', 'i', 'o', 'u']
+console.log(deleteVovel(sentence, vovel))
+
+
+
+
 
